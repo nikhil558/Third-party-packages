@@ -1,4 +1,5 @@
 import {Chrono} from 'react-chrono'
+import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 import {
   BarChart,
@@ -11,6 +12,7 @@ import {
   Pie,
   Cell,
 } from 'recharts'
+import 'reactjs-popup/dist/index.css'
 import './index.css'
 
 const barData = [
@@ -75,6 +77,10 @@ const chronoItems = [
       'On 10 May 1940, Hitler began his long-awaited offensive in the west by invading neutral Holland and attacking northern France.',
   },
 ]
+
+const overlayStyles = {
+  backgroundColor: '#fecba6',
+}
 
 const VideoPlayer = () => {
   const DataFormatter = number => {
@@ -179,6 +185,33 @@ const VideoPlayer = () => {
             />
           </div>
         </Chrono>
+      </div>
+      <div className="popup-container">
+        <Popup
+          trigger={open => (
+            <button className="trigger-button" type="button">
+              Trigger - {open ? 'Opened' : 'Closed'}
+            </button>
+          )}
+          on={['hover', 'focus']}
+          overlayStyle={overlayStyles}
+          closeOnDocumentClick
+        >
+          {close => (
+            <>
+              <div>
+                <p>React is a popular and widely used programming language</p>
+              </div>
+              <button
+                type="button"
+                className="trigger-button"
+                onClick={() => close()}
+              >
+                Close
+              </button>
+            </>
+          )}
+        </Popup>
       </div>
     </div>
   )

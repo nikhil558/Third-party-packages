@@ -7,6 +7,7 @@ dependencies:
   react-chrono: 1.19.1_react-dom@17.0.1+react@17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-player: 2.10.1_react@17.0.1
+  reactjs-popup: 2.0.5_react-dom@17.0.1+react@17.0.1
   recharts: 2.1.13_react-dom@17.0.1+react@17.0.1
 devDependencies:
   eslint-config-airbnb: 18.2.1
@@ -10632,6 +10633,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+  /reactjs-popup/2.0.5_react-dom@17.0.1+react@17.0.1:
+    dependencies:
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    dev: false
+    engines:
+      node: '>=10'
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-b5hv9a6aGsHEHXFAgPO5s1Jw1eSkopueyUVxQewGdLgqk2eW0IVXZrPRpHR629YcgIpC2oxtX8OOZ8a7bQJbxA==
   /read-pkg-up/3.0.0:
     dependencies:
       find-up: 2.1.0
@@ -13187,4 +13200,5 @@ specifiers:
   react-dom: 17.0.1
   react-player: 2.10.1
   react-scripts: 4.0.3
+  reactjs-popup: 2.0.5
   recharts: 2.1.13

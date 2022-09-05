@@ -15,6 +15,7 @@
     "react-chrono": "1.19.1",
     "react-dom": "17.0.1",
     "react-player": "2.10.1",
+    "reactjs-popup": "2.0.5",
     "recharts": "2.1.13"
   },
   "devDependencies": {
